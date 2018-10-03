@@ -56,7 +56,7 @@ import firebase from 'firebase'
 .container::after {
   content: "";
    background: url(../../img/jc1.png);
-  opacity: 0.8;
+  opacity: 0.5;
   top: 0;
   left: 0;
   bottom: 0;

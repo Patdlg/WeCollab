@@ -1,5 +1,5 @@
 <template>
-<div class="background">
+<div class="container1">
 <div class="marker">
 <div class="words">
 <h5>How It Works<span class="red-text">!</span></h5>
@@ -10,8 +10,9 @@
   <div class="google-map" id="map"></div>
 
 </div>
-
 </div>
+
+
 
 
 </template>
@@ -89,7 +90,7 @@ export default {
       }, (err)=> {
         console.log(err)
         this.renderMap()
-      }, { maximumAge: 6000, })
+      }, { maximumAge: 60000, })
     } else {
       //position center by default values
       this.renderMap()
@@ -100,6 +101,17 @@ export default {
 </script>
 
 <style>
+.container1 {
+ content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+
+}
 
 .marker {
   display: flex;
@@ -107,7 +119,7 @@ export default {
   width: 260px;
   height: 255px;
   margin-top:100px;
-  margin-left:5%;
+  margin-left:2%;
   border-radius: 50%;
   text-align: center;
   background: url(https://openclipart.org/image/800px/svg_to_png/260439/earth.png);
@@ -140,15 +152,5 @@ color: white;
 
 
 
-.background {
-   content: "";
-   background: url(../../img/jc2.png);
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-size: cover;
-  position: absolute;
-  z-index: -1;
-}
+
 </style>

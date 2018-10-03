@@ -4,7 +4,7 @@
 <div class="words">
   <h2><span class="red-text">We</span>Collab is a platform to join and collab your talents with your peers across the globe.
 </h2>
-<h4>Meet people with your same interests! Create, discuss, and dream about the next big thing!</h4>
+<h4 class="black-text">Meet people with your same interests! Create, discuss, and dream about the next big thing!</h4>
 </div>
 </div>
 
@@ -96,12 +96,13 @@ export default {
 <style>
 
 .container {
-  display: flex;
-  align-items: flex-start;
+
 }
 .container::after {
   content: "";
    background: url(../../img/jc1.png);
+   height: 150%;
+   width: 100%;
   opacity: 0.5;
   top: 0;
   left: 0;
@@ -111,16 +112,18 @@ export default {
   position: absolute;
   z-index: -1;
 
+
 }
 
 .slogan {
-  width: 600px;
-  margin-left: -5%;
-  margin-right: 30px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   margin-top:10px;
   color: white;
-
-
+  text-align: center;
 }
 
 .card-panel {
@@ -128,8 +131,8 @@ export default {
 }
 
 .signup{
-  max-width: 400px;
-  margin-top:10px;
+  max-width: 100%;
+  margin-top:10%;
 }
 
 .signup h2 {
