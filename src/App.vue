@@ -18,4 +18,9 @@ export default {
 
 <style>
 
+body{
+ font-family: 'Permanent Marker', cursive;
+}
+
+
 </style>

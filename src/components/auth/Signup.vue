@@ -1,7 +1,16 @@
 <template>
+<div class="container">
+<div class="slogan">
+<div class="words">
+  <h2><span class="red-text">We</span>Collab is a platform to join and collab your talents with your peers across the globe.
+</h2>
+<h4>Meet people with your same interests! Create, discuss, and dream about the next big thing!</h4>
+</div>
+</div>
+
 <div @submit.prevent="signup" class="signup container">
   <form class="card-panel">
-    <h2 class="center deep-purple-text">Signup</h2>
+    <h2 class="center black-text">Signup</h2>
     <div class="field">
     <label for="email">Email:</label>
     <input type="email" name="email" v-model="email"></input>
@@ -11,19 +20,22 @@
     <input type="password" name="password" v-model="password"></input>
     </div>
      <div class="field">
-    <label for="alias">Alias:</label>
+    <label for="alias">Username:</label>
     <input type="text" name="alias" v-model="alias"></input>
     </div>
     <p class="red-text center" v-if="feedback">
     {{ feedback }}
     </p>
-    <div class="field center">
-    <button class="btn deep-purple">
+    <div class="field">
+    <button class="btn lime darkern-4">
     Signup
     </button>
+
     </div>
   </form>
 </div>
+</div>
+
 
 </template>
 
@@ -83,9 +95,41 @@ export default {
 
 <style>
 
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+.container::after {
+  content: "";
+   background: url(../../img/jc1.png);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+
+}
+
+.slogan {
+  width: 600px;
+  margin-left: -5%;
+  margin-right: 30px;
+  margin-top:10px;
+  color: white;
+
+
+}
+
+.card-panel {
+  width: 100%;
+}
+
 .signup{
   max-width: 400px;
-  margin-top:60px;
+  margin-top:10px;
 }
 
 .signup h2 {
