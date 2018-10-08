@@ -8,7 +8,10 @@
 </div>
 </div>
 
+
 <div @submit.prevent="signup" class="signup container">
+<img id="img" src="http://enrepinc.com/wp-content/uploads/2017/05/innovation-icon.png">
+
   <form class="card-panel">
     <h2 class="center black-text">Signup</h2>
     <div class="field">
@@ -93,14 +96,13 @@ export default {
 
 </script>
 
-<style>
+<style scope>
 
 .container {
 
 }
 .container::after {
   content: "";
-   background: url(../../img/jc1.png);
    height: 150%;
    width: 100%;
   opacity: 0.5;
@@ -112,27 +114,44 @@ export default {
   position: absolute;
   z-index: -1;
 
+}
 
+h2 {
+  color: black;
 }
 
 .slogan {
   width: 100%;
   height: 100%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   margin-top:10px;
   color: white;
   text-align: center;
+
 }
 
 .card-panel {
-  width: 100%;
+  width: 300px;
+  display: block;
+  margin-left: auto;
+ margin-right: auto;
+ margin-top: 20px;
+
 }
 
+div.container {
+  width: 100% !important;
+
+}
+img#img{
+  display: block;
+  margin-left: auto;
+ margin-right: auto;
+}
 .signup{
-  max-width: 100%;
-  margin-top:10%;
+    display: block;
+  margin-left: auto;
+ margin-right: auto;
 }
 
 .signup h2 {

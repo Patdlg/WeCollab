@@ -51,11 +51,11 @@ import firebase from 'firebase'
 
 </script>
 
-<style>
+<style scope>
 
 .container::after {
   content: "";
-   background: url(../../img/jc1.png);
+
   opacity: 0.5;
   top: 0;
   left: 0;
