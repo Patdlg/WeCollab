@@ -1,17 +1,9 @@
 <template>
-<div class="container">
-<div class="slogan">
-<div class="words">
-  <h2><span class="red-text">We</span>Collab is a platform to join and collab your talents with your peers across the globe.
-</h2>
-<h4 class="black-text">Meet people with your same interests! Create, discuss, and dream about the next big thing!</h4>
-</div>
-</div>
-
-
-<div @submit.prevent="signup" class="signup container">
-<img id="img" src="http://enrepinc.com/wp-content/uploads/2017/05/innovation-icon.png">
-
+<div class="main">
+  <div class="slogan">
+    <div class="title">
+    </div>
+    <div @submit.prevent="signup" class="signup container">
   <form class="card-panel">
     <h2 class="center black-text">Signup</h2>
     <div class="field">
@@ -37,6 +29,8 @@
     </div>
   </form>
 </div>
+  </div>
+
 </div>
 
 
@@ -98,57 +92,55 @@ export default {
 
 <style scope>
 
+body{
+     background: url(https://cdn.lynda.com/course/365728/365728-636190610546181732-16x9.jpg);
+
+}
+
+.slogan {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  margin-top: -5;
+
+}
+
 .container {
+  margin-top: -5px;
 
 }
 .container::after {
   content: "";
-   height: 150%;
+   height: 130%;
    width: 100%;
-  opacity: 0.5;
+  opacity: 0.8;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   background-size: cover;
-  position: absolute;
+  position: bottom;
   z-index: -1;
 
 }
 
 h2 {
   color: black;
+  width: 30%;
 }
-
-.slogan {
-  width: 100%;
-  height: 100%;
-  display: block;
-  margin-top:10px;
-  color: white;
-  text-align: center;
-
-}
-
 .card-panel {
   width: 300px;
   display: block;
   margin-left: auto;
  margin-right: auto;
- margin-top: 20px;
-
 }
 
-div.container {
-  width: 100% !important;
+img{
+  width: 80px;
+}
 
-}
-img#img{
-  display: block;
-  margin-left: auto;
- margin-right: auto;
-}
 .signup{
+  margin-top: 40px;
     display: block;
   margin-left: auto;
  margin-right: auto;

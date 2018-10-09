@@ -94,7 +94,6 @@ export default {
 
 .background::after {
    content: "";
-   background: url(../../img/jc3.png);
   opacity: 0.8;
   top: 0;
   left: 0;
